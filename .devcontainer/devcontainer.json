@@ -8,7 +8,9 @@
 
 	"extensions": [
 		"VisualStudioExptTeam.vscodeintellicode",
-		"react-proptypes-generate",
-		"eamodio.gitlens"
+		"suming.react-proptypes-generate",
+		"eamodio.gitlens",
+		"dbaeumer.vscode-eslint",
+		"esbenp.prettier-vscode"
     ]
 }
