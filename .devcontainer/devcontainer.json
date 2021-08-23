@@ -1,0 +1,14 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.191.1/containers/docker-existing-dockerfile
+{
+	"name": "React Dev Container",
+    "dockerFile": "../Dockerfile",
+	"workspaceFolder": "/projects",
+	"postCreateCommand": "/.initScripts/create-react-app.sh",
+
+	"extensions": [
+		"VisualStudioExptTeam.vscodeintellicode",
+		"react-proptypes-generate",
+		"eamodio.gitlens"
+    ]
+}
