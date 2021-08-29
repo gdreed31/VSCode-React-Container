@@ -13,6 +13,16 @@ RUN mkdir /.initScripts
 COPY --chown=root:root create-react-app.sh /.initScripts/
 RUN chmod o+x /.initScripts/create-react-app.sh
 
+# setup profile
+COPY alias /root/.alias
+RUN chmod a+x /root/.alias
+
+COPY ashrc /root/.ashrc
+RUN chmod a+x /root/.ashrc
+
+ENV ENV="/root/.ashrc"
+
+
 # Set the work directory
 RUN mkdir /projects
 WORKDIR /projects
